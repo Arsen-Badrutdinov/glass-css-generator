@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+body {
+    min-height: 100vh;
+    background: #1a1a24;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+}
+
+.circle {
+    position: absolute;
+    border-radius: 50%;
+    filter: blur(80px);
+}
+
+.circle-1 {
+    width: 300px;
+    height: 300px;
+    background: #0a84ff;
+    top: 20%;
+    left: 30%;
+}
+
+.circle-2 {
+    width: 400px;
+    height: 400px;
+    background: #bf5af2;
+    bottom: 20%;
+    right: 30%;
+}
+
+.container {
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    justify-content: center;
+    max-width: 900px;
+    width: 100%;
+    padding: 20px;
+}
+
+.glass-preview, .glass-panel {
+    background: rgba(255, 255, 255, 0.2);
+    border-radius: 16px;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    padding: 40px;
+    flex: 1;
+    min-width: 300px;
+}
+
+.glass-preview {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.glass-preview h2 {
+    margin-bottom: 10px;
+}
+
+.control-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input[type="range"] {
+    width: 100%;
+    accent-color: #fff;
+}
+
+.code-output {
+    background: rgba(0, 0, 0, 0.5);
+    padding: 15px;
+    border-radius: 8px;
+    margin-top: 20px;
+}
+
+code {
+    font-family: monospace;
+    font-size: 14px;
+    white-space: pre-line;
+}
